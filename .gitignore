@@ -18,3 +18,6 @@ scheldemonitoR.Rproj
 .Rproj.user/
 .Rproj.user
 .Renviron*
+.Rdata
+.httr-oauth
+.DS_Store
