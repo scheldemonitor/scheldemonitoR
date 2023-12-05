@@ -1,0 +1,41 @@
+Package: scheldemonitoR
+Title: Import, explore and plot data from ScheldeMonitor
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Claudia", "Meneses", ,"claudia.meneses@vliz.be", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9397-5442")),
+    person("Wout", "Van Echelpoel", ,"wout.vanechelpoel@UGent.be", role = c("aut"), comment = c(ORCID = "0000-0002-9397-5442")),
+    person("Stijn", "Bruneel", ,"stijn.bruneel@UGent.be", role = c("aut"), comment = c(ORCID = "0000-0002-9397-5442")),
+    person("Robert", "Middelveld", ,, role = c("aut")),
+    person("Robin", "Nicolai", ,"r.p.nicolai@hkv.nl", role = c("aut")),
+    person("Niel", "Verbrigghe", ,"niel.verbrigghe@anteagroup.be", role = c("aut"))
+    )
+Description: Includes funtions to download (biotic and abiotic) data from ScheldeMonitor, agreeggate he data, plot the data and styling.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    akima,
+    checkmate,
+    dplyr,
+    ggplot2,
+    graphics,
+    httr,
+    leaflet,
+    lubridate,
+    raster,
+    readr,
+    readxl,
+    riverdist,
+    sf,
+    sp,
+    stats,
+    stringr,
+    utils,
+    worrms
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)
+LazyData: true

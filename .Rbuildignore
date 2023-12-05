@@ -1,0 +1,6 @@
+^scheldemonitoR\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+.Rhistory
+.gitignore
+.github
