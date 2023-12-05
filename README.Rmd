@@ -19,8 +19,10 @@ knitr::opts_chunk$set(
 [![repo status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 <!-- badges: end -->
 
+
+
 `scheldemonitoR` provides functionality to access data from the [ScheldeMonitor](https://www.scheldemonitor.org/nl) database
-hosted by the Flanders Marine Institute (VLIZ). 
+hosted by the Flanders Marine Institute (VLIZ). It also provides functions to aggregate and plot data.
 
 ## Installation
 
@@ -30,4 +32,5 @@ You can install the development version of scheldemonitoR from [GitHub](https://
 # install.packages("devtools")
 devtools::install_github("scheldemonitor/scheldemonitoR")
 ```
-
+## Credits
+Functions of this package were written by multiple collaborators. Check `DESCRIPTION` for more information.

@@ -13,7 +13,8 @@ status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repost
 
 `scheldemonitoR` provides functionality to access data from the
 [ScheldeMonitor](https://www.scheldemonitor.org/nl) database hosted by
-the Flanders Marine Institute (VLIZ).
+the Flanders Marine Institute (VLIZ). It also provides functions to
+aggregate and plot data.
 
 ## Installation
 
@@ -24,3 +25,8 @@ You can install the development version of scheldemonitoR from
 # install.packages("devtools")
 devtools::install_github("scheldemonitor/scheldemonitoR")
 ```
+
+## Credits
+
+Functions of this package were written by multiple collaborators. Check
+`DESCRIPTION` for more information.
