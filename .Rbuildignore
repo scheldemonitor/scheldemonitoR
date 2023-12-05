@@ -4,3 +4,4 @@
 .Rhistory
 .gitignore
 .github
+^README\.Rmd$
