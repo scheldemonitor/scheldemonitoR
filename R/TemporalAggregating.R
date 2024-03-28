@@ -348,9 +348,10 @@ aggregateYearlyPerStation <- function(data, stat = "mean"){
   checkmate::assertDataFrame(data)
   checkmate::assert_choice(stat, c("mean", "sd", "se", "median", "min", "max", "5perc", "10perc", "90perc", "99perc", "sum"))
 
-  # calculate year
-  data$year <- lubridate::year(data$datetime)
-
+  # check if 'year' column is present, if not calculate year
+  if(!("year" %in% names(data))){
+    data$year <- lubridate::year(data$datetime)
+  }
   # Determine if all required columns are present
   if(length(which(c("year", "stationname", "value") %in% names(data))) != 3){
     stop("Required input: (1) year, (2) stationname and (3) value")
@@ -426,8 +427,10 @@ aggregateYearlyPerSegment <- function(data, stat = "mean"){
   checkmate::assertDataFrame(data)
   checkmate::assert_choice(stat, c("mean", "sd", "se", "median", "min", "max", "5perc", "10perc", "90perc", "99perc", "sum"))
 
-  # calculate year:
-  data$year <- lubridate::year(data$datetime)
+  # check if 'year' column is present, if not calculate year
+  if(!("year" %in% names(data))){
+    data$year <- lubridate::year(data$datetime)
+  }
 
   # Determine if all required columns are present
   if(length(which(c("year", "segment", "value") %in% names(data))) != 3){
@@ -504,8 +507,10 @@ aggregateYearlyPerZone <- function(data, stat = "mean"){
   checkmate::assertDataFrame(data)
   checkmate::assert_choice(stat, c("mean", "sd", "se", "median", "min", "max", "5perc", "10perc", "90perc", "99perc", "sum"))
 
-  # calculate year
-  data$year <- lubridate::year(data$datetime)
+  # check if 'year' column is present, if not calculate year
+  if(!("year" %in% names(data))){
+    data$year <- lubridate::year(data$datetime)
+  }
 
   # Determine if all required columns are present
   if(length(which(c("year", "zone", "value") %in% names(data))) != 3){
