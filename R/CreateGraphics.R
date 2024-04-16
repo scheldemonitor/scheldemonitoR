@@ -225,8 +225,10 @@ makeTemporalPlot <- function(data, varname = "Variable", varunit = "-", spatial 
   #Assert arguments
   checkmate::assert_data_frame(data)
 
-  # add year column
-  data$year <- lubridate::year(data$datetime)
+  # check if 'year' column is present, if not calculate year
+  if(!("year" %in% names(data))){
+    data$year <- lubridate::year(data$datetime)
+  }
 
   # Determine if required columns are present
   if(tolower(temporal) == "month" && !(tolower(temporal) %in% names(data))) {
